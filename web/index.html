@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>G Polarizados · Polarizado de autos en Ushuaia</title>
+<meta name="description" content="Taller de polarizado en Ushuaia. Autos, camionetas, utilitarios, casas y comercios. Retiro de polarizado y grabado de cristales. Pedí turno por WhatsApp.">
+<meta property="og:title" content="G Polarizados · Polarizado en Ushuaia">
+<meta property="og:description" content="Taller familiar, el primero de polarizado de la ciudad. Pedí turno por WhatsApp.">
+<meta property="og:image" content="img/taller-hilux.webp">
+<meta name="theme-color" content="#6e1f1b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutomotiveBusiness",
+  "name": "G Polarizados",
+  "description": "Taller de polarizado de vehículos, casas y comercios en Ushuaia.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Juana Genoveva Fadul 431",
+    "addressLocality": "Ushuaia",
+    "addressRegion": "Tierra del Fuego",
+    "addressCountry": "AR"
+  },
+  "telephone": "+5492901409456",
+  "areaServed": "Ushuaia",
+  "sameAs": ["https://www.instagram.com/gpolarizadosush/"],
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Polarizado de autos"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Polarizado de camionetas y 4x4"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Polarizado de combis, utilitarios, camiones y colectivos"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Retiro de polarizado"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Grabado de cristales"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Polarizado de casas y comercios"}}
+  ]
+}
+</script>
+<style>
+:root{
+  --pared:#6e1f1b;      /* rojo de las paredes del taller */
+  --pared-2:#561713;
+  --verde:#1d3b2f;      /* verde del fondo del taller */
+  --papel:#f3ecdf;
+  --papel-2:#e8dfcd;
+  --tinta:#171412;
+  --tinta-2:#4a433d;
+  --wa:#1f8f4e;
+  --wa-2:#187a41;
+  --borde:#d4c8b2;
+  --bg:var(--papel);
+  --fg:var(--tinta);
+  --fg-2:var(--tinta-2);
+  --cuadro:#171412;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120f; --fg:#efe7d8; --fg-2:#b9ad9c; --papel-2:#221c17; --borde:#3a3129; --cuadro:#efe7d8;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120f; --fg:#efe7d8; --fg-2:#b9ad9c; --papel-2:#221c17; --borde:#3a3129; --cuadro:#efe7d8;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Archivo",system-ui,sans-serif;font-size:17px;line-height:1.55}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-stretch:68%;font-variation-settings:"wdth" 68;font-weight:800;line-height:1;letter-spacing:.005em;text-transform:uppercase;margin:0}
+h2{font-size:clamp(2.1rem,7vw,3.4rem)}
+p{margin:0 0 1em}
+
+/* banderines del taller, usados como separador */
+.banderin{height:14px;background:
+  conic-gradient(var(--cuadro) 25%,transparent 0 50%,var(--cuadro) 0 75%,transparent 0) 0 0/14px 14px;opacity:.9}
+
+/* encabezado */
+.top{background:var(--pared);color:var(--papel)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.marca{white-space:nowrap;font-variation-settings:"wdth" 62;font-stretch:62%;font-weight:900;font-size:1.6rem;text-transform:uppercase;text-decoration:none;letter-spacing:.02em}
+.marca span{font-weight:500;opacity:.75;font-size:1rem;margin-left:6px;letter-spacing:.06em}
+@media(max-width:420px){.marca span{display:none}}
+.top a.chico{white-space:nowrap;font-weight:700;font-size:.95rem;text-decoration:none;border:2px solid var(--papel);padding:6px 12px;border-radius:3px}
+
+/* portada */
+.portada{background:var(--pared);color:var(--papel);padding:28px 0 0}
+.portada .wrap{display:grid;gap:28px}
+.portada h1{font-size:clamp(3rem,13.5vw,7rem)}
+.portada .bajada{font-size:1.15rem;max-width:30em;color:#f0dcd2;margin:18px 0 24px}
+.botones{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem;text-decoration:none;padding:15px 22px;border-radius:4px;min-height:52px}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-2)}
+.btn-linea{border:2px solid currentColor}
+.btn svg{width:22px;height:22px;flex:none}
+.portada figure{margin:0;position:relative}
+.portada figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px 4px 0 0}
+.portada figcaption{position:absolute;left:12px;bottom:12px;background:rgba(23,20,18,.82);color:#efe7d8;font-size:.82rem;padding:5px 9px;border-radius:2px}
+@media(min-width:820px){
+  .portada{padding-top:56px}
+  .portada .wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:end;gap:48px}
+  .portada .texto{padding-bottom:56px}
+}
+
+section{padding:64px 0}
+.intro{color:var(--fg-2);max-width:36em;margin-top:14px}
+
+/* comparador */
+.comparador{position:relative;margin-top:28px;max-width:560px;aspect-ratio:4/5;overflow:hidden;border-radius:4px;user-select:none;touch-action:pan-y;background:#000}
+.comparador img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.comparador .despues{clip-path:inset(0 0 0 var(--pos,50%))}
+.comparador .linea{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;margin-left:-1.5px;background:#fff;pointer-events:none}
+.comparador .tirador{position:absolute;top:50%;left:var(--pos,50%);width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:#fff;color:#171412;display:grid;place-items:center;font-weight:900;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.comparador input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.comparador .et{position:absolute;top:12px;font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;background:rgba(23,20,18,.8);color:#efe7d8;padding:4px 8px;border-radius:2px;pointer-events:none}
+.comparador .et.a{left:12px}.comparador .et.d{right:12px}
+.ayuda{font-size:.9rem;color:var(--fg-2);margin-top:10px}
+
+.pares{display:grid;gap:28px;margin-top:40px}
+.par{margin:0}
+.par .fotos{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.par img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.par figcaption{font-size:.92rem;color:var(--fg-2);margin-top:8px}
+.par .et2{display:grid;grid-template-columns:1fr 1fr;gap:4px;font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+@media(min-width:820px){
+  .ad .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .pares{margin-top:0}
+}
+
+/* servicios */
+.servicios{background:var(--verde);color:#efe7d8}
+.servicios .intro{color:#bfcfc4}
+.lista{list-style:none;padding:0;margin:32px 0 0;border-top:1px solid rgba(239,231,216,.25)}
+.lista li{display:grid;gap:4px;padding:18px 0;border-bottom:1px solid rgba(239,231,216,.25)}
+.lista b{font-variation-settings:"wdth" 75;font-stretch:75%;font-size:1.35rem;text-transform:uppercase;font-weight:800}
+.lista span{color:#cfdcd3}
+@media(min-width:820px){
+  .lista li{grid-template-columns:22rem 1fr;align-items:baseline;gap:24px}
+}
+
+/* taller */
+.taller .wrap{display:grid;gap:28px}
+.taller .fotos{display:grid;grid-template-columns:1.4fr 1fr;gap:4px}
+.taller .fotos img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.datos{margin:22px 0 0;padding:0;list-style:none}
+.datos li{padding:12px 0;border-top:1px solid var(--borde)}
+.datos li:last-child{border-bottom:1px solid var(--borde)}
+.datos small{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--fg-2);font-weight:700}
+.falta{background:#fff3b0;color:#171412;padding:1px 5px;border-radius:2px;font-size:.9rem}
+@media(min-width:820px){.taller .wrap{grid-template-columns:1fr 1fr;align-items:center;gap:56px}}
+
+/* reseñas */
+.resenas{background:var(--papel-2)}
+.resenas .wrap{display:grid;gap:20px}
+.estrellas{font-size:clamp(3.5rem,14vw,6rem);font-stretch:62%;font-variation-settings:"wdth" 62;font-weight:900;line-height:.9}
+.estrellas small{font-size:.32em;font-weight:600;font-stretch:100%;font-variation-settings:"wdth" 100;display:block;margin-top:8px;color:var(--fg-2)}
+@media(min-width:820px){.resenas .wrap{grid-template-columns:auto 1fr;gap:56px;align-items:center}}
+
+/* preguntas */
+details{border-top:1px solid var(--borde);padding:16px 0}
+details:last-of-type{border-bottom:1px solid var(--borde)}
+summary{cursor:pointer;font-weight:800;font-size:1.1rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-weight:900;font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:10px 0 0;color:var(--fg-2);max-width:40em}
+.faq .wrap>div{max-width:760px}
+
+/* cierre */
+.cierre{background:var(--pared);color:var(--papel);text-align:left}
+.cierre p{color:#f0dcd2;max-width:30em;margin:16px 0 24px}
+footer{background:var(--tinta);color:#b9ad9c;font-size:.9rem;padding:28px 0 100px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+footer a{color:#efe7d8}
+
+/* botón fijo en celular */
+.fijo{position:fixed;left:0;right:0;bottom:0;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(23,20,18,.94);z-index:10}
+.fijo .btn{width:100%;justify-content:center}
+@media(min-width:820px){.fijo{display:none}footer{padding-bottom:28px}}
+
+a:focus-visible,input:focus-visible+.tirador,summary:focus-visible{outline:3px solid #f2c94c;outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="marca" href="#">G Polarizados<span>Ushuaia</span></a>
+    <a class="chico" href="https://www.google.com/maps/search/?api=1&query=G+Polarizados+Juana+Genoveva+Fadul+431+Ushuaia" target="_blank" rel="noopener">Cómo llegar</a>
+  </div>
+</header>
+
+<main>
+<section class="portada" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="texto">
+      <h1>Polarizado de autos en Ushuaia</h1>
+      <p class="bajada">Autos, camionetas, utilitarios, casas y comercios. Somos un taller familiar, el primero de polarizado de la ciudad, y trabajamos con turno.</p>
+      <div class="botones">
+        <a class="btn btn-wa" href="https://wa.me/5492901409456?text=Hola%21%20Quiero%20pedir%20turno%20para%20polarizar.%20Mi%20veh%C3%ADculo%20es%3A%20" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.9 2.9 4.5 4 1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+          Pedí turno por WhatsApp
+        </a>
+      </div>
+    </div>
+    <figure>
+      <img src="img/taller-hilux.webp" width="900" height="1125" alt="Toyota Hilux plateada con los vidrios polarizados, adentro del taller de G Polarizados" fetchpriority="high">
+      <figcaption>Hilux recién terminada, en el taller</figcaption>
+    </figure>
+  </div>
+</section>
+<div class="banderin" aria-hidden="true"></div>
+
+<section class="ad" id="trabajos">
+  <div class="wrap">
+    <div>
+      <h2>Antes y después</h2>
+      <p class="intro">Fotos de trabajos hechos acá, sin retoques. Arrastrá la línea para ver la diferencia.</p>
+      <div class="comparador" style="--pos:50%">
+        <img src="img/hilux-antes.webp" width="900" height="1125" alt="Puerta de la Hilux antes de polarizar: se ve todo el interior">
+        <img class="despues" src="img/hilux-despues.webp" width="900" height="1125" alt="La misma puerta después de polarizar: el interior ya no se ve">
+        <span class="et a">Antes</span><span class="et d">Después</span>
+        <div class="linea"></div>
+        <div class="tirador" aria-hidden="true">↔</div>
+        <input type="range" min="0" max="100" value="50" aria-label="Deslizá para comparar antes y después">
+      </div>
+      <p class="ayuda">Toyota Hilux, octubre 2026.</p>
+    </div>
+    <div class="pares">
+      <figure class="par">
+        <div class="et2"><span>Antes</span><span>Después</span></div>
+        <div class="fotos">
+          <img src="img/gris-antes.webp" width="900" height="1125" loading="lazy" alt="Camioneta gris antes de polarizar">
+          <img src="img/gris-despues.webp" width="900" height="1125" loading="lazy" alt="Camioneta gris después de polarizar">
+        </div>
+        <figcaption>Toyota Hilux gris.</figcaption>
+      </figure>
+      <figure class="par">
+        <div class="et2"><span>Antes</span><span>Después</span></div>
+        <div class="fotos">
+          <img src="img/hyundai-antes.webp" width="900" height="1125" loading="lazy" alt="Hyundai naranja antes de polarizar">
+          <img src="img/hyundai-despues.webp" width="900" height="1125" loading="lazy" alt="Hyundai naranja después de polarizar">
+        </div>
+        <figcaption>Hyundai naranja.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="wrap">
+    <h2>Qué hacemos</h2>
+    <p class="intro">Te asesoramos para elegir el tono que más te conviene según el uso que le das.</p>
+    <ul class="lista">
+      <li><b>Autos</b><span>Polarizado completo o solo algunos vidrios.</span></li>
+      <li><b>Camionetas y 4x4</b><span>Hilux, SW4, Amarok, Ranger y la que tengas.</span></li>
+      <li><b>Combis, utilitarios, camiones y colectivos</b><span>Vehículos de trabajo y transporte de pasajeros.</span></li>
+      <li><b>Retiro de polarizado</b><span>Sacamos lámina vieja, burbujeada o descolorida y dejamos el vidrio limpio.</span></li>
+      <li><b>Grabado de cristales</b><span>Grabamos los vidrios del vehículo.</span></li>
+      <li><b>Casas y comercios</b><span>Vidrieras, ventanas y oficinas.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="taller" id="taller">
+  <div class="wrap">
+    <div class="fotos">
+      <img src="img/taller-sw4.webp" width="900" height="1200" loading="lazy" alt="Toyota SW4 negra entrando al taller, con banderines y carteles de fondo">
+      <img src="img/peugeot.webp" width="900" height="1600" loading="lazy" alt="Peugeot 2008 polarizado frente a la ventana del taller con el logo de G Polarizados">
+    </div>
+    <div>
+      <h2>El taller</h2>
+      <p class="intro">Trabajamos bajo techo, con turno, así cada vehículo tiene el tiempo que necesita. Traelo como esté, del resto nos encargamos nosotros.</p>
+      <ul class="datos">
+        <li><small>Dirección</small>Juana Genoveva Fadul 431, Ushuaia · <a href="https://www.google.com/maps/search/?api=1&query=G+Polarizados+Juana+Genoveva+Fadul+431+Ushuaia" target="_blank" rel="noopener">Ver en el mapa</a></li>
+        <li><small>Horario</small><span class="falta">FALTA: horario de atención</span></li>
+        <li><small>WhatsApp</small><a href="https://wa.me/5492901409456" target="_blank" rel="noopener">2901 40-9456</a></li>
+        <li><small>Instagram</small><a href="https://www.instagram.com/gpolarizadosush/" target="_blank" rel="noopener">@gpolarizadosush</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="resenas" id="resenas">
+  <div class="wrap">
+    <div class="estrellas">5,0 ★<small>en Google</small></div>
+    <div>
+      <h2 style="font-size:clamp(1.8rem,6vw,2.6rem)">Lo que dicen los clientes</h2>
+      <p class="intro">Las reseñas están en Google, escritas por la gente que pasó por el taller.</p>
+      <div class="botones">
+        <a class="btn btn-linea" href="https://www.google.com/maps/search/?api=1&query=G+Polarizados+Ushuaia" target="_blank" rel="noopener">Leer reseñas</a>
+        <a class="btn btn-linea" href="https://g.page/r/CdkPuX3vPbJzEBM/review" target="_blank" rel="noopener">Ya vine, quiero dejar la mía</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="preguntas">
+  <div class="wrap">
+    <div>
+      <h2>Preguntas que nos hacen</h2>
+      <div style="margin-top:28px">
+        <details>
+          <summary>¿Cuánto sale?</summary>
+          <p>Depende del vehículo y de los vidrios que quieras polarizar. Mandanos marca y modelo por WhatsApp y te pasamos el precio al toque.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto tarda?</summary>
+          <p>Un auto lleva alrededor de dos horas. Camionetas grandes, utilitarios y retiro de lámina vieja pueden llevar más; te lo decimos cuando pedís el turno.</p>
+        </details>
+        <details>
+          <summary>¿Hay que dejar el auto lavado?</summary>
+          <p>No. Traelo como esté, nosotros limpiamos los vidrios antes de colocar la lámina.</p>
+        </details>
+        <details>
+          <summary>¿Sacan polarizado viejo?</summary>
+          <p>Sí. Si la lámina está burbujeada, rayada o violeta, la retiramos y, si querés, te colocamos una nueva.</p>
+        </details>
+        <details>
+          <summary>¿Polarizan casas y comercios?</summary>
+          <p>Sí, vidrieras, ventanas y oficinas. Escribinos con las medidas aproximadas o una foto y te asesoramos.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="banderin" aria-hidden="true"></div>
+<section class="cierre">
+  <div class="wrap">
+    <h2>¿Lo traés esta semana?</h2>
+    <p>Escribinos con la marca y el modelo, te pasamos precio y el primer turno libre.</p>
+    <a class="btn btn-wa" href="https://wa.me/5492901409456?text=Hola%21%20Quiero%20pedir%20turno%20para%20polarizar.%20Mi%20veh%C3%ADculo%20es%3A%20" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>G Polarizados · Juana Genoveva Fadul 431, Ushuaia, Tierra del Fuego</span>
+    <span><a href="https://www.instagram.com/gpolarizadosush/" target="_blank" rel="noopener">Instagram</a></span>
+  </div>
+</footer>
+
+<div class="fijo">
+  <a class="btn btn-wa" href="https://wa.me/5492901409456?text=Hola%21%20Quiero%20pedir%20turno%20para%20polarizar.%20Mi%20veh%C3%ADculo%20es%3A%20" target="_blank" rel="noopener">Pedí turno por WhatsApp</a>
+</div>
+
+<script>
+document.querySelectorAll('.comparador').forEach(function(c){
+  var r=c.querySelector('input');
+  r.addEventListener('input',function(){c.style.setProperty('--pos',r.value+'%')});
+});
+</script>
+</body>
+</html>
