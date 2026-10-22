@@ -9,6 +9,8 @@
 <meta property="og:description" content="Taller familiar, el primero de polarizado de la ciudad. Pedí turno por WhatsApp.">
 <meta property="og:image" content="img/taller-hilux.webp">
 <meta name="theme-color" content="#16181b">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
@@ -17,6 +19,7 @@
   "@context": "https://schema.org",
   "@type": "AutomotiveBusiness",
   "name": "G Polarizados",
+  "logo": "img/logo-512.png",
   "description": "Taller de polarizado de vehículos, casas y comercios en Ushuaia.",
   "address": {
     "@type": "PostalAddress",
@@ -52,7 +55,7 @@
   --glass-2:#dde1e4;    /* un tono abajo, para bloques */
   --text:#15171a;
   --text-2:#4b5056;
-  --pared:#7a221b;      /* rojo de las paredes del taller */
+  --pared:#8e2a2e;      /* rojo del logo y de las paredes del taller */
   --on-pared:#fbeeea;
   --wa:#157a40;
   --wa-2:#10632f;
@@ -91,7 +94,7 @@ section[id]{scroll-margin-top:16px}
 .top{background:var(--ink);color:var(--on-ink)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
 .marca{display:flex;align-items:center;gap:10px;text-decoration:none;white-space:nowrap}
-.marca i{width:34px;height:34px;display:grid;place-items:center;background:var(--pared);color:#fff;font-style:normal;font-weight:800;font-size:1.2rem;border-radius:3px}
+.marca img{width:40px;height:40px;border-radius:50%}
 .marca b{font-variation-settings:"wdth" 78;font-stretch:78%;font-size:var(--s-lead);font-weight:700}
 .nav{display:flex;gap:24px}
 .nav a{text-decoration:none;color:var(--on-ink-2);transition:color .15s}
@@ -207,7 +210,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid #e9b949;outline-offset:2
 
 <header class="top">
   <div class="wrap">
-    <a class="marca" href="#" translate="no"><i aria-hidden="true">G</i><b>G Polarizados</b></a>
+    <a class="marca" href="#" translate="no"><img src="img/logo-96.png" width="40" height="40" alt=""><b>G Polarizados</b></a>
     <nav class="nav" aria-label="Secciones">
       <a href="#trabajos">Trabajos</a>
       <a href="#servicios">Servicios</a>
